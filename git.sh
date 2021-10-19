@@ -8,10 +8,12 @@ if [ ! $MSG ];
   exit 130;
   }
 fi
+echo $MSG > MSG;
+git add --all && git commit -m $MSG && git push;
 for e in elioApps elioData elioSin
 do
   cd $e;
-  source './git.sh' $MSG
+  source './npm.sh' $MSG
   cd ..;
 done
-echo 'All commited with "$MSG"'
+echo "All commited with message: '$MSG'"
