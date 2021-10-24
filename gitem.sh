@@ -2,11 +2,6 @@
 set -u
 set -e
 export MSG="$1";
-if [ ! $MSG ];
-  then {
-  $MSG = "No message"
-  }
-fi
 echo $MSG > MSG;
 git add --all && git commit -m $MSG && git push;
 for e in elioApps elioData elioSin

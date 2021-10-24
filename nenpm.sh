@@ -2,11 +2,6 @@
 set -u
 set -e
 export MSG="$1";
-if [ ! $MSG ];
-  then {
-  $MSG = "No message"
-  }
-fi
 for e in elioData elioSin
 do
   cd $e;
