@@ -1,0 +1,14 @@
+#!/bin/bash
+set -u
+set -e
+export MSG="$1";
+timestamp="$(date)"
+echo "$MSG $timestamp" > MSG;
+git add --all && git commit -m "$MSG $timestamp" && git push;
+for e in elioData elioSin # elioApps
+do
+  cd $e;
+  source './newbranch.sh' "$MSG"
+  cd ..;
+done
+echo "All commited with message: '$MSG'"
