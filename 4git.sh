@@ -1,17 +1,17 @@
 #!/bin/bash
 set -u
 set -e
-export MSG="$1";
-if [ ! $MSG ];
+export COMMIT="$1";
+if [ ! $COMMIT ];
   then {
-  echo 'ERROR: 1st parameter should be commit MSG';
+  echo 'ERROR: 1st parameter should be commit COMMIT';
   exit 130;
   }
 fi
 for f in bones flesh generator-flesh spider thing
 do
   cd $f;
-  echo $MSG > MSG;
-  git add --all && git commit -m $MSG && git push;
+  echo $COMMIT > COMMIT;
+  git add --all && git commit -m $COMMIT && git push;
   cd ..;
 done
