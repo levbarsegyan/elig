@@ -5,7 +5,7 @@ timestamp="$(date)";
 for f in elioBelievers elioData elioSin elioThings
 do
   cd $f;
-  source "./$f/tribe.sh" "$TRIBE" "$COMMAND";
+  source "_$COMMAND.sh" "$TRIBE" "$COMMAND";
   cd ..;
 done
 echo "[>><<TRIBES>><<].$TRIBE.elioBelievers._$COMMAND ✓";
