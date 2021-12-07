@@ -1,12 +1,14 @@
 #!/bin/bash
-export TRIBE="$1";
-export COMMAND="$2";
-timestamp="$(date)";
-for f in elioBelievers elioData elioSin elioThings
+set +e
+TRIBE="$1";
+COMMAND="$2";
+EXTRA="$3";
+for PROJ in elioData #elioBelievers elioThings # elioData elioSin elioThings
 do
-  cd $f;
-  source "_$COMMAND.sh" "$TRIBE" "$COMMAND";
+  cd $PROJ;
+  source "tribe.sh" "$TRIBE" "$COMMAND" "$EXTRA";
   cd ..;
 done
-echo "[>><<TRIBES>><<].$TRIBE.elioBelievers._$COMMAND ✓";
-source "_$COMMAND.sh" "$TRIBE" "elioThings";
+KING=${PWD##*/};
+source "_$COMMAND.sh" "$TRIBE" "$EXTRA";
+source "_say.sh" "$TRIBE" "$COMMAND" "$KING";

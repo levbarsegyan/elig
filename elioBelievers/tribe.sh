@@ -1,13 +1,16 @@
 #!/bin/bash
-export TRIBE="$1";
-export COMMAND="$2";
+set -e
+TRIBE="$1";
+COMMAND="$2";
+EXTRA="$3";
 timestamp="$(date)";
-for f in sinsay tribes
+for APP in sinsay tribes
 do
-  cd $f;
-  echo "[>><<TRIBES>><<].$TRIBE.$f._$COMMAND ✓";
-  source "../_$COMMAND.sh" "$TRIBE" "$f";
+  cd $APP;
+  source "../../_$COMMAND.sh" "$TRIBE" "$EXTRA";
+  source "../../_say.sh" "$TRIBE" "$COMMAND" "$APP";
   cd ..;
 done
-echo "[>><<TRIBES>><<].$TRIBE.elioBelievers._$COMMAND ✓";
-source "_$COMMAND.sh" "$TRIBE" "elioThings";
+PROJECT=${PWD##*/};
+source "../_$COMMAND.sh" "$TRIBE" "$EXTRA ";
+source "../_say.sh" "$TRIBE" "$COMMAND" "$PROJECT";
