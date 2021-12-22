@@ -9,5 +9,5 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
   cd ..;
 done < ".tribalinclude"
 PROJECT=${PWD##*/};
-source "_$COMMAND.sh" "$TRIBE" "$EXTRA";
 source "_say.sh" "$TRIBE" "$COMMAND" "$PROJECT";
+source "_$COMMAND.sh" "$TRIBE" "$EXTRA";
