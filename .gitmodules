@@ -1,0 +1,12 @@
+[submodule "elioangels"]
+	path = elioangels
+	url = git@gitlab.com-elio:elioway/elioangels.git
+[submodule "eliodata"]
+	path = eliodata
+	url = git@gitlab.com-elio:elioway/eliodata.git
+[submodule "eliofaithful"]
+	path = eliofaithful
+	url = git@gitlab.com-elio:elioway/eliofaithful.git
+[submodule "eliosin"]
+	path = eliosin
+	url = git@gitlab.com-elio:elioway/eliosin.git
