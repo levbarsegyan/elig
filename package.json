@@ -1,0 +1,29 @@
+{
+    "name": "theElioWay",
+    "title": "theElioWay",
+    "version": "1",
+    "description": "Notes and resources for the elioWay project.",
+    "scripts": {
+        "format": "prettier --write \"**/*.{js,json,scss,md,html}\" \"!package.json\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/elioway/theElioWay/"
+    },
+    "keywords": [
+        "sass",
+        "css",
+        "scss",
+        "html",
+        "wireframe"
+    ],
+    "author": "Tim Bushell",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://gitlab.com/elioway/theElioWay/issues?status=new&status=open"
+    },
+    "homepage": "https://gitlab.com/elioway/theElioWay/blob/master/README.md",
+    "devDependencies": {
+        "prettier": "1.16.4"
+    }
+}
