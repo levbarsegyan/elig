@@ -32,13 +32,13 @@ cd elio
 git clone git@gitlab.com:elioway/eliosin.git
 cd eliosin
 yarn
-git clone git@gitlab.com:eliobelievers/god.git
+git clone git@gitlab.com:eliosin/god.git
 # yarn
-git clone git@gitlab.com:eliobelievers/eve.git
+git clone git@gitlab.com:eliosin/eve.git
 # yarn
-git clone git@gitlab.com:eliobelievers/adon.git
+git clone git@gitlab.com:eliosin/adon.git
 # yawn
-git clone git@gitlab.com:eliobelievers/generator-sin.git
+git clone git@gitlab.com:eliosin/generator-sin.git
 # yawn
 ```
 ## More

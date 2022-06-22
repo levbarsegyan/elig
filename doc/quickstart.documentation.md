@@ -20,7 +20,7 @@ There will be a `/doc` folder inside each app. It should contain the documentati
 - `blog-<title-as-slug>.md`
   - Add misc, bloggable "How Tos" or explanations; "trip ups"; snippets, etc
 ## MarkDown
-Documentation should be written in MARKDOWN, which is required by [tablets - elio's documentation browser (done the elioWay)](https://gitlab.com/eliobelievers/tablets) .
+Documentation should be written in MARKDOWN, which is required by [tablets - elio's documentation browser (done the elioWay)](https://gitlab.com/eliosin/tablets) .
 ## Prettier Formatting
 Install `prettier`:
 ```bash
