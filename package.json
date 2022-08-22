@@ -24,6 +24,27 @@
     },
     "homepage": "https://gitlab.com/elioway/theElioWay/blob/master/README.md",
     "devDependencies": {
-        "prettier": "1.16.4"
+        "@elioway/adon": "^1.4.2",
+        "@elioway/bushido": "^0.0.1",
+        "@elioway/eve": "^1.4.1",
+        "@elioway/god": "^1.4.3",
+        "@elioway/sassy-fibonacciness": "^1.0.12",
+        "browser-sync": "^2.24.4",
+        "chai": "^4.1.2",
+        "chai-dom": "^1.8.0",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^3.9.4",
+        "gulp-concat": "^2.6.1",
+        "gulp-rename": "^1.2.3",
+        "gulp-sass": "^4.0.1",
+        "gulp-uglify": "^3.0.0",
+        "jquery": "^3.3.1",
+        "jsdom": "11.12.0",
+        "jsdom-global": "3.0.2",
+        "mocha": "^6.2.0",
+        "prettier": "1.16.4",
+        "run-sequence": "^2.2.1",
+        "sass-true": "^4.0.0",
+        "sassy-lists": "^3.0.1"
     }
 }

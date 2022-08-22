@@ -1,0 +1,7 @@
+figure {
+  @include colorize_god($hell-color, white);
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

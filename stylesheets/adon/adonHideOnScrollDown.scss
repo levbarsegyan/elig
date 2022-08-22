@@ -1,0 +1,11 @@
+.adonHideOnScrollDown {
+  @include tight {
+    transition: all $transition;
+    transition-timing-function: ease-in;
+    -webkit-transition: all $transition;
+    -webkit-transition-timing-function: ease-in;
+    &.adonHide {
+      top: -500px;
+    }
+  }
+}

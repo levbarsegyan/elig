@@ -1,0 +1,12 @@
+#{$pillar} {
+  @include pillar_border($pillar-color solid 2px, $pillar-color solid 2px);
+  cite {
+    background-color: lighten($hell-color, 50);
+  }
+  var {
+    background-color: lighten($pillar-color, 60);
+  }
+  @include tight {
+    @include pillar_containment(1%, 1%);
+  }
+}

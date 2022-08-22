@@ -1,0 +1,35 @@
+$god-space: 2%; // the horizontal padding in all the prongs.
+$heaven-width: 10%; // prong width right (as a percentage to help scaling).
+$hell-width: 30%; // prong width left (as a percentage to help scaling).
+$personal-space: 18px; // the vertical padding between believers.
+$transition: 0.5s;
+$god-loose: 1300px; // loose - prongs divided - no overlap.
+$god-cosy: 1000px; // cosy - overlap between sinners and the pillar.
+$god-tight: 800px; // tight - believers full width - piller width small margin.
+$heaven-color: black;
+$pillar-color: black;
+$hell-color: lighten($heaven-color, 85);
+$god-color: $pillar-color;
+$god-blushed: lighten($heaven-color, 45);
+$god-h1: 3rem; // font size of h1.
+$god-h6: 1.2rem; // font size of h6.
+$god-spoke: $god-h6 * 1.3; // standout with big text.
+$god-head: 'Montserrat'; // for heading level text.
+$god-body: $god-head; // for body level text.
+$container: (body, main); // sin classes only affect direct children of these
+$pillar: (
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  menu,
+  ol,
+  ul,
+  dl,
+  hr,
+  footer,
+  pre
+); // pillar - all tags are stictly contained the same way - no believers here.
+$heaven: (blockquote); // hangs right - gets the best views.
+$hell: (header, nav, figure); // hangs left.
