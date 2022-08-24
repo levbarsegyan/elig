@@ -1,6 +1,6 @@
 {
-    "name": "theElioWay",
-    "title": "theElioWay",
+    "name": "elio",
+    "title": "elio",
     "version": "1",
     "description": "Notes and resources for the elioWay project.",
     "scripts": {
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://gitlab.com/elioway/theElioWay/"
+        "url": "https://gitlab.com/elioway/elio/"
     },
     "keywords": [
         "sass",
@@ -20,9 +20,9 @@
     "author": "Tim Bushell",
     "license": "MIT",
     "bugs": {
-        "url": "https://gitlab.com/elioway/theElioWay/issues?status=new&status=open"
+        "url": "https://gitlab.com/elioway/elio/issues?status=new&status=open"
     },
-    "homepage": "https://gitlab.com/elioway/theElioWay/blob/master/README.md",
+    "homepage": "https://gitlab.com/elioway/elio/blob/master/README.md",
     "devDependencies": {
         "@elioway/adon": "^1.4.2",
         "@elioway/bushido": "^0.0.1",

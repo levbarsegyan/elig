@@ -22,12 +22,12 @@ Documentation should be written in MARKDOWN, which is required by [chisel - elio
 ## Prettier Formatting
 Install `prettier`:
 ```bash
-cd ~/repo/theElioWay
+cd ~/repo/elio
 yarn
 ```
 Run `prettier` using the `yarn format` command. This will format any code, including the MARKDOWN files in your doc folder.:
 ```bash
-cd ~/repo/theElioWay
+cd ~/repo/elio
 yarn format
 git add .
 git commit -m "prettier"
