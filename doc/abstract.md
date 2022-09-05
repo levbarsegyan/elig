@@ -1,5 +1,5 @@
 # elioWay Abstract
-`elioWay`
+The `elioWay` is
 ## More
 - [elioSin Abstract](https://gitlab.com/elioway/eliosin/blob/master/doc/abstract.md)
 - [elioAngels Abstract](https://gitlab.com/elioway/elioangels/blob/master/doc/abstract.md)

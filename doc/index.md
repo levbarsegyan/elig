@@ -1,20 +1,15 @@
 # elioWay
-`elioWay`
-## Abstract
-- [Abstract elioWay](abstract.md)
-## Hands On
-- [Installing elioWay](installing.md)
-- [Quickstart elioWay](quickstart.md)
+The `elioWay` is a nugget of an idea with a grand and undeliverable vision.
 ## Core
-- [god](https://gitlab.com/eliosin/god)
-  - SASS _patterns_ for wireframe or layout per tagName.
-- [eve](https://gitlab.com/eliosin/eve)
+- [elioSin](https://gitlab.com/eliosin/god)
+  - SASS _patterns_ for creating CSS stylesheet which target tagNames not classNames.
+- [elioData](https://gitlab.com/eliosin/eve)
   - SASS _patterns_ for css styling per tagName.
 - [adon](https://gitlab.com/eliosin/adon)
   - Javascript _patterns_ for jquery/DOM UX actions per tagName.
 ## Tooling
 - [generator-sin](https://gitlab.com/eliosin/generator-sin)
-  - yeoman generator for strict elioWay _patterns_ for  **god** ,  **eve**  and  **adon** .
+  - yeoman generator for strict elioWay _patterns_ for **god** , **eve** and **adon** .
 ## Related
 - [SassyFibonacciness](https://gitlab.com/elioangels/sassy-fibonacciness)
   - Fibonacci SASS mixin for weighting CSS units, especially heading font sizes.

@@ -1,42 +1,40 @@
 var browserSync = require('browser-sync').create()
 var gulp = require('gulp'),
-  clean = require('gulp-clean-css'),
-  concat = require('gulp-concat'),
-  rename = require('gulp-rename'),
-  sass = require('gulp-sass'),
   uglify = require('gulp-uglify')
 var runSequence = require('run-sequence')
-var css_folder = './css/'
 var js_watch = [
   './js/plugins.js',
-  './js/adon/adonHideOnScrollDown.js',
-  './js/adon/adonNavScrollTo.js',
+  './node_modules/@elioway/adon/js/adon/adonHideOnScrollDown.js',
   './node_modules/@elioway/adon/js/adon/adonHighLink.js',
+  './node_modules/@elioway/adon/js/adon/adonNavScrollTo.js'
 ]
-var sass_watch = ['./stylesheets*.scss']
-var distro_css_files = [
-  './css/normalize.css',
-  './css/main.css',
-  './css/sloth.css'
-]
+var css_watch = ['./node_modules/@elioway/bushido/rei/css/rei.min.css', './node_modules/@elioway/sins/sloth/css/sloth.min.css'']
+var js_folder = './js/'
+var css_folder = './css/'
 var dist_js_folder = './public/js/'
 var dist_css_folder = './public/css/'
-gulp.task('sass', function(cb) {
-  runSequence('build_css', 'distribute_css', cb)
+gulp.task('deploy', function(cb) {
+  runSequence('rei', 'sloth', 'rei_deploy', 'sloth_deploy', cb)
 })
-gulp.task('build_css', function() {
+gulp.task('rei', function() {
   return gulp
-    .src('./stylesheets/judge.scss')
-    .pipe(
-      sass({
-        includePaths: sass_watch
-      })
-    )
-    .pipe(concat('sloth.css'))
+    .src('./node_modules/@elioway/bushido/rei/css/rei.min.css')
     .pipe(gulp.dest(css_folder))
-    .pipe(rename('sloth.min.css'))
-    .pipe(clean())
+})
+gulp.task('sloth', function() {
+  return gulp
+    .src('./node_modules/@elioway/sins/sloth/css/sloth.min.css')
     .pipe(gulp.dest(css_folder))
+})
+gulp.task('rei_deploy', function() {
+  return gulp
+    .src('./node_modules/@elioway/bushido/rei/css/rei.min.css')
+    .pipe(gulp.dest(dist_css_folder))
+})
+gulp.task('sloth_deploy', function() {
+  return gulp
+    .src('./node_modules/@elioway/sins/sloth/css/sloth.min.css')
+    .pipe(gulp.dest(dist_css_folder))
 })
 gulp.task('distribute_css', function() {
   return gulp
@@ -46,7 +44,7 @@ gulp.task('distribute_css', function() {
     .pipe(gulp.dest(dist_css_folder))
     .pipe(browserSync.stream())
 })
-gulp.task('minify-js', function() {
+gulp.task('minify-adons', function() {
   gulp
     .src(js_watch)
     .pipe(uglify())
@@ -62,16 +60,16 @@ gulp.task('minify-main', function() {
     .pipe(gulp.dest(dist_js_folder))
     .pipe(browserSync.stream())
 })
-gulp.task('watch', ['sass', 'minify-js', 'minify-main'], function() {
+gulp.task('watch', ['deploy', 'minify-adons', 'minify-main'], function() {
   browserSync.init({
-    server: './public/'
+    server: './'
   })
-  gulp.watch(sass_watch, ['sass'])
-  gulp.watch(js_watch, ['minify-js'])
+  gulp.watch(css_watch, ['rei', 'sloth'])
+  gulp.watch(js_watch, ['minify-adons'])
   gulp.watch('./js/main.js', ['minify-main'])
-  gulp.watch(sass_watch).on('change', browserSync.reload)
+  gulp.watch(css_watch).on('change', browserSync.reload)
   gulp.watch(js_watch).on('change', browserSync.reload)
   gulp.watch('./js/main.js').on('change', browserSync.reload)
-  gulp.watch(['**/*.html']).on('change', browserSync.reload)
+  gulp.watch(['**/public*.html']).on('change', browserSync.reload)
 })
-gulp.task('default', ['sass', 'minify-js', 'minify-main', 'watch'])
+gulp.task('default', ['deploy', 'minify-adons', 'minify-main', 'watch'])
