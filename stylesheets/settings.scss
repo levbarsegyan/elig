@@ -14,7 +14,7 @@ $god-blushed: lighten($heaven-color, 45);
 $god-h1: 3rem; // font size of h1.
 $god-h6: 1.2rem; // font size of h6.
 $god-spoke: $god-h6 * 1.3; // standout with big text.
-$god-head: 'Montserrat'; // for heading level text.
+$god-head: "Montserrat"; // for heading level text.
 $god-body: $god-head; // for body level text.
 $container: (body, main); // sin classes only affect direct children of these
 $pillar: (
