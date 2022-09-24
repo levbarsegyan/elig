@@ -3,7 +3,7 @@ The `elioWay` is a nugget of an idea with a grand and undeliverable vision.
 ## Core
 - [elioSin](https://gitlab.com/eliosin/god)
   - SASS _patterns_ for creating CSS stylesheet which target tagNames not classNames.
-- [elioData](https://gitlab.com/eliosin/eve)
+- [elioThing](https://gitlab.com/eliosin/eve)
   - SASS _patterns_ for css styling per tagName.
 - [adon](https://gitlab.com/eliosin/adon)
   - Javascript _patterns_ for jquery/DOM UX actions per tagName.
