@@ -267,6 +267,7 @@ body>h6,
 main>h6 {
   font-size: 1.2rem;
 }
+body>article,
 body>div,
 body>dl,
 body>h1,
@@ -279,6 +280,7 @@ body>ol,
 body>p,
 body>pre,
 body>ul,
+main>article,
 main>div,
 main>dl,
 main>h1,
@@ -300,6 +302,7 @@ main>ul {
   padding: 18px 2%;
 }
 @media screen and (max-width:800px) {
+  body>article,
   body>div,
   body>dl,
   body>h1,
@@ -312,6 +315,7 @@ main>ul {
   body>p,
   body>pre,
   body>ul,
+  main>article,
   main>div,
   main>dl,
   main>h1,
@@ -332,6 +336,7 @@ main>ul {
   }
 }
 @media screen and (min-width:801px) and (max-width:1000px) {
+  body>article,
   body>div,
   body>dl,
   body>h1,
@@ -344,6 +349,7 @@ main>ul {
   body>p,
   body>pre,
   body>ul,
+  main>article,
   main>div,
   main>dl,
   main>h1,
@@ -974,6 +980,14 @@ kbd {
 }
 body>address,
 main>address {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.56rem;
+  font-style: normal;
+  font-weight: 700;
+}
+body>article,
+main>article {
   background-color: #000;
   color: #fff;
   font-size: 1.56rem;
