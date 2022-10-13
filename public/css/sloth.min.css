@@ -20,7 +20,7 @@ html {
   word-break: break-word;
 }
 body {
-  font: 400 1.2rem Montserrat;
+  font: 400 1rem Montserrat;
   margin: 0;
 }
 h1 {
@@ -245,27 +245,27 @@ textarea {
 }
 body>h1,
 main>h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 body>h2,
 main>h2 {
-  font-size: 2.3rem;
+  font-size: 1.6rem;
 }
 body>h3,
 main>h3 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 body>h4,
 main>h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 body>h5,
 main>h5 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 body>h6,
 main>h6 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 body>dl,
 body>footer,
@@ -274,7 +274,6 @@ body>h2,
 body>h3,
 body>h4,
 body>hr,
-body>menu,
 body>ol,
 body>p,
 body>pre,
@@ -286,7 +285,6 @@ main>h2,
 main>h3,
 main>h4,
 main>hr,
-main>menu,
 main>ol,
 main>p,
 main>pre,
@@ -308,7 +306,6 @@ main>ul {
   body>h3,
   body>h4,
   body>hr,
-  body>menu,
   body>ol,
   body>p,
   body>pre,
@@ -320,7 +317,6 @@ main>ul {
   main>h3,
   main>h4,
   main>hr,
-  main>menu,
   main>ol,
   main>p,
   main>pre,
@@ -340,7 +336,6 @@ main>ul {
   body>h3,
   body>h4,
   body>hr,
-  body>menu,
   body>ol,
   body>p,
   body>pre,
@@ -352,7 +347,6 @@ main>ul {
   main>h3,
   main>h4,
   main>hr,
-  main>menu,
   main>ol,
   main>p,
   main>pre,
@@ -398,10 +392,12 @@ main>div {
 body>blockquote,
 body>figure,
 body>header,
+body>menu,
 body>nav,
 main>blockquote,
 main>figure,
 main>header,
+main>menu,
 main>nav {
   box-sizing: border-box;
   display: inline-block;
@@ -417,10 +413,12 @@ main>nav {
   body>blockquote,
   body>figure,
   body>header,
+  body>menu,
   body>nav,
   main>blockquote,
   main>figure,
   main>header,
+  main>menu,
   main>nav {
     width: 39%!important;
   }
@@ -429,10 +427,12 @@ main>nav {
   body>blockquote,
   body>figure,
   body>header,
+  body>menu,
   body>nav,
   main>blockquote,
   main>figure,
   main>header,
+  main>menu,
   main>nav {
     width: 28%!important;
   }
@@ -441,10 +441,12 @@ main>nav {
   body>blockquote,
   body>figure,
   body>header,
+  body>menu,
   body>nav,
   main>blockquote,
   main>figure,
   main>header,
+  main>menu,
   main>nav {
     width: 26.8%!important;
   }
@@ -454,11 +456,13 @@ main>nav {
   body>div,
   body>figure,
   body>header,
+  body>menu,
   body>nav,
   main>blockquote,
   main>div,
   main>figure,
   main>header,
+  main>menu,
   main>nav {
     box-sizing: border-box;
     display: inline-block;
@@ -476,11 +480,13 @@ main>nav {
   body>div,
   body>figure,
   body>header,
+  body>menu,
   body>nav,
   main>blockquote,
   main>div,
   main>figure,
   main>header,
+  main>menu,
   main>nav {
     margin-bottom: 23.4px!important;
   }
@@ -490,11 +496,13 @@ main>nav {
   body>div,
   body>figure,
   body>header,
+  body>menu,
   body>nav,
   main>blockquote,
   main>div,
   main>figure,
   main>header,
+  main>menu,
   main>nav {
     margin-bottom: 28.8px!important;
   }
@@ -504,11 +512,13 @@ main>nav {
   body>div,
   body>figure,
   body>header,
+  body>menu,
   body>nav,
   main>blockquote,
   main>div,
   main>figure,
   main>header,
+  main>menu,
   main>nav {
     margin-bottom: 34.2px!important;
   }
@@ -579,7 +589,7 @@ main>.adonToolBar {
   margin-bottom: 0!important;
   padding-top: 18px!important;
   padding-bottom: 18px!important;
-  transition: all .5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 @media screen and (max-width:1000px) {
   body>.adonToolBar,
@@ -602,7 +612,7 @@ body>.adonToolSlave,
 main>.adonToolSlave {
   margin-top: 0!important;
   opacity: 1;
-  transition: visibility .5s linear 0s,all .5s;
+  transition: visibility 1s linear 0s,all 1s;
   visibility: visible;
 }
 body>.adonToolSlave.slavehidden,
@@ -614,7 +624,7 @@ main>.adonToolSlave.slavehidden {
   overflow: hidden;
   padding: 0 0 0 0 !important;
   line-height: 0;
-  transition: visibility 0s linear .5s,all 0s;
+  transition: visibility 0s linear 1s,all 0s;
   transition-timing-function: ease;
   visibility: hidden;
 }
@@ -632,9 +642,9 @@ main>div.adonToolBar {
 @media screen and (max-width:800px) {
   body>.adonHideOnScrollDown,
   main>.adonHideOnScrollDown {
-    transition: all .5s;
+    transition: all 1s;
     transition-timing-function: ease-in;
-    -webkit-transition: all .5s;
+    -webkit-transition: all 1s;
     -webkit-transition-timing-function: ease-in;
   }
   body>.adonHideOnScrollDown.adonHide,
@@ -674,14 +684,14 @@ main>dl {
   padding-bottom: 18px;
   padding-top: 18px;
 }
-body>dl dt,
-main>dl dt {
+body>dl>dt,
+main>dl>dt {
   color: #000;
-  font: 800 1.56rem Montserrat;
+  font: 800 1.3rem Montserrat;
   padding-top: 18px;
 }
-body>dl dd,
-main>dl dd {
+body>dl>dd,
+main>dl>dd {
   margin-left: 0;
   padding-bottom: 18px;
 }
@@ -697,46 +707,30 @@ main>table td,
 main>table th {
   padding: 3px 18px;
 }
-body>table>tfoot td:nth-child(1),
-body>table>thead td:nth-child(1),
-main>table>tfoot td:nth-child(1),
-main>table>thead td:nth-child(1) {
-  min-width: 15%;
-}
-body>table>tfoot td,
-body>table>thead td,
-main>table>tfoot td,
-main>table>thead td {
-  min-width: 15%;
-  max-width: 70%;
-}
+body>table>tbody th,
 body>table>tfoot th,
 body>table>thead th,
+main>table>tbody th,
 main>table>tfoot th,
 main>table>thead th {
   color: #000;
   font-family: Montserrat;
   font-weight: 800;
-  border-bottom: 2px solid #000;
+}
+body>table>thead th,
+main>table>thead th {
+  border-bottom: 1px solid #000;
+}
+body>table>tfoot th,
+main>table>tfoot th {
+  border-top: 1px solid #000;
+  text-align: right;
 }
 body>table>tbody td,
 body>table>tbody th,
 main>table>tbody td,
 main>table>tbody th {
   border-bottom: 1px solid #000;
-}
-body>table>tbody th,
-main>table>tbody th {
-  color: #000;
-  font-family: Montserrat;
-}
-body>table>tfoot td,
-main>table>tfoot td {
-  text-align: right;
-}
-body>table tr:nth-child(even),
-main>table tr:nth-child(even) {
-  background: #e9e9e9;
 }
 @media screen and (max-width:800px) {
   body>table,
@@ -747,18 +741,21 @@ main>table tr:nth-child(even) {
   }
 }
 body>form label,
+main>form label {
+  margin-top: 18px;
+}
+body>form legend,
+main>form legend {
+  font-size: 1.3rem;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+body>form label,
 body>form legend,
 main>form label,
 main>form legend {
   color: #000;
   font-family: Montserrat;
-  margin-top: 18px;
-}
-body>form legend,
-main>form legend {
-  font-size: 1.56rem;
-  margin-bottom: 2%;
-  margin-top: 2%;
 }
 body>form textarea,
 main>form textarea {
@@ -782,7 +779,7 @@ main>form input[type=radio]+label {
 }
 body>form fieldset,
 main>form fieldset {
-  border: 1px solid #737373;
+  border: 1px #000 solid;
   margin-top: 18px;
   padding: 0 18px;
 }
@@ -889,6 +886,139 @@ main>pre {
     width: 96%!important;
   }
 }
+body>menu,
+main>menu {
+  box-sizing: border-box;
+}
+body>menu *,
+main>menu * {
+  box-sizing: border-box;
+}
+body>menu:after,
+main>menu:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+}
+body>menu a,
+main>menu a {
+  text-decoration: none;
+}
+body>menu label,
+main>menu label {
+  font-weight: 700;
+}
+body>menu a,
+body>menu label,
+main>menu a,
+main>menu label {
+  display: block;
+  cursor: pointer;
+  padding: 3px;
+  white-space: nowrap;
+}
+body>menu menu,
+body>menu nav,
+main>menu menu,
+main>menu nav {
+  margin: 0;
+  padding: 0;
+}
+body>menu menu>nav menu nav,
+main>menu menu>nav menu nav {
+  padding-left: 3px;
+}
+body>menu menu>nav,
+main>menu menu>nav {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+body>menu menu:hover>nav,
+main>menu menu:hover>nav {
+  opacity: 1;
+  height: auto;
+}
+body>menu>a,
+body>menu>menu,
+main>menu>a,
+main>menu>menu {
+  float: left;
+}
+body>menu>menu>nav,
+main>menu>menu>nav {
+  position: absolute;
+}
+body>nav,
+main>nav {
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  position: -webkit-sticky;
+  padding-left: 18px;
+  top: 0;
+  z-index: 5000;
+}
+body>nav *,
+main>nav * {
+  box-sizing: border-box;
+}
+body>nav:after,
+main>nav:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+}
+body>nav a,
+main>nav a {
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #fff;
+}
+body>nav label,
+main>nav label {
+  font-weight: 700;
+}
+body>nav a,
+body>nav label,
+main>nav a,
+main>nav label {
+  display: block;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 6px 3px;
+  overflow: hidden;
+}
+body>nav menu,
+body>nav nav,
+main>nav menu,
+main>nav nav {
+  margin: 0;
+  padding: 0;
+}
+body>nav menu>nav menu nav,
+main>nav menu>nav menu nav {
+  padding-left: 3px;
+}
+body>nav menu>nav,
+main>nav menu>nav {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 1s ease,height 1s ease;
+}
+body>nav menu:hover>nav,
+main>nav menu:hover>nav {
+  height: auto;
+  opacity: 1;
+  height: 100%;
+}
 body>figure,
 main>figure {
   box-sizing: border-box;
@@ -926,7 +1056,7 @@ main>blockquote {
   padding-top: 25px!important;
   padding-bottom: 100px!important;
   border: 0!important;
-  font-size: 1.56rem;
+  font-size: 1.3rem;
 }
 body>blockquote b,
 body>blockquote strong,
@@ -962,19 +1092,24 @@ a>img {
 button,
 input[type=file] {
   background-color: #fff;
-  border: #000 1px solid;
   color: #000;
+  border: 1px solid #000;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.2rem;
   padding: 18px 2%;
   text-decoration: none;
+  font-size: 1rem;
+}
+button>img,
+input[type=file]>img {
+  max-height: 48px;
+  height: auto;
 }
 button:hover,
 input[type=file]:hover {
   background-color: #000;
-  border: #000 1px solid;
+  border: 1px #000 solid;
   color: #fff;
 }
 button:disabled,
@@ -994,7 +1129,6 @@ body>h2 cite,
 body>h3 cite,
 body>h4 cite,
 body>hr cite,
-body>menu cite,
 body>ol cite,
 body>p cite,
 body>pre cite,
@@ -1006,7 +1140,6 @@ main>h2 cite,
 main>h3 cite,
 main>h4 cite,
 main>hr cite,
-main>menu cite,
 main>ol cite,
 main>p cite,
 main>pre cite,
@@ -1020,7 +1153,6 @@ body>h2 var,
 body>h3 var,
 body>h4 var,
 body>hr var,
-body>menu var,
 body>ol var,
 body>p var,
 body>pre var,
@@ -1032,7 +1164,6 @@ main>h2 var,
 main>h3 var,
 main>h4 var,
 main>hr var,
-main>menu var,
 main>ol var,
 main>p var,
 main>pre var,
@@ -1047,7 +1178,6 @@ main>ul var {
   body>h3,
   body>h4,
   body>hr,
-  body>menu,
   body>ol,
   body>p,
   body>pre,
@@ -1059,7 +1189,6 @@ main>ul var {
   main>h3,
   main>h4,
   main>hr,
-  main>menu,
   main>ol,
   main>p,
   main>pre,
@@ -1131,62 +1260,37 @@ body>footer label,
 main>footer label {
   white-space: nowrap;
 }
-body>nav,
-main>nav {
+body>nav a,
+body>nav label,
+body>nav menu,
+body>nav nav,
+main>nav a,
+main>nav label,
+main>nav menu,
+main>nav nav {
   background-color: #000;
-  color: #737373;
-  display: block;
-  font-size: 1rem;
-  font-weight: 700;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 5000;
+  color: #fff;
 }
 body>nav a,
-main>nav a {
-  color: #fff;
-  border-bottom: 0 solid #ead1dc;
-  display: inline-block;
-  padding: 6px 3px;
-  width: 100%;
-}
-body>nav label,
-main>nav label {
+body>nav menu,
+main>nav a,
+main>nav menu {
   display: block;
-  font-size: 80%;
-  padding: 6px 3px;
-  width: 100%;
 }
 body>nav a:visited,
 main>nav a:visited {
   color: #737373;
 }
 body>nav a:hover,
-main>nav a:hover {
+body>nav label:hover,
+main>nav a:hover,
+main>nav label:hover {
   background-color: #fff;
   color: #000;
 }
-body>nav>a:first-child:hover,
-main>nav>a:first-child:hover {
-  background-color: inherit;
-  color: inherit;
-}
+body>nav>a:first-child,
 body>nav>a:last-child,
+main>nav>a:first-child,
 main>nav>a:last-child {
   border-bottom: 0;
-}
-body>nav>a:first-child,
-main>nav>a:first-child {
-  background-color: inherit;
-  border-bottom: 0;
-  color: #fff;
-  padding: 0 0 18px;
-}
-body>nav>a:first-child img,
-main>nav>a:first-child img {
-  height: 48px!important;
-  max-height: 48px!important;
-  min-height: 48px!important;
-  width: auto;
 }

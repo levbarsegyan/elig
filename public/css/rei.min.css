@@ -410,8 +410,10 @@ main>figure {
 }
 body>address,
 body>blockquote,
+body>nav,
 main>address,
-main>blockquote {
+main>blockquote,
+main>nav {
   box-sizing: border-box;
   display: inline-block;
   margin-left: 0!important;
@@ -425,24 +427,30 @@ main>blockquote {
 @media screen and (min-width:801px) and (max-width:1000px) {
   body>address,
   body>blockquote,
+  body>nav,
   main>address,
-  main>blockquote {
+  main>blockquote,
+  main>nav {
     width: 39%!important;
   }
 }
 @media screen and (min-width:1001px) and (max-width:1300px) {
   body>address,
   body>blockquote,
+  body>nav,
   main>address,
-  main>blockquote {
+  main>blockquote,
+  main>nav {
     width: 28%!important;
   }
 }
 @media screen and (min-width:1301px) {
   body>address,
   body>blockquote,
+  body>nav,
   main>address,
-  main>blockquote {
+  main>blockquote,
+  main>nav {
     width: 26.8%!important;
   }
 }
@@ -451,10 +459,12 @@ main>blockquote {
   body>aside,
   body>blockquote,
   body>figure,
+  body>nav,
   main>address,
   main>aside,
   main>blockquote,
-  main>figure {
+  main>figure,
+  main>nav {
     box-sizing: border-box;
     display: inline-block;
     margin-left: 0!important;
@@ -471,10 +481,12 @@ main>blockquote {
   body>aside,
   body>blockquote,
   body>figure,
+  body>nav,
   main>address,
   main>aside,
   main>blockquote,
-  main>figure {
+  main>figure,
+  main>nav {
     margin-bottom: 23.4px!important;
   }
 }
@@ -483,10 +495,12 @@ main>blockquote {
   body>aside,
   body>blockquote,
   body>figure,
+  body>nav,
   main>address,
   main>aside,
   main>blockquote,
-  main>figure {
+  main>figure,
+  main>nav {
     margin-bottom: 28.8px!important;
   }
 }
@@ -495,10 +509,12 @@ main>blockquote {
   body>aside,
   body>blockquote,
   body>figure,
+  body>nav,
   main>address,
   main>aside,
   main>blockquote,
-  main>figure {
+  main>figure,
+  main>nav {
     margin-bottom: 34.2px!important;
   }
 }
@@ -568,7 +584,7 @@ main>.adonToolBar {
   margin-bottom: 0!important;
   padding-top: 18px!important;
   padding-bottom: 18px!important;
-  transition: all .5s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 @media screen and (max-width:1000px) {
   body>.adonToolBar,
@@ -591,7 +607,7 @@ body>.adonToolSlave,
 main>.adonToolSlave {
   margin-top: 0!important;
   opacity: 1;
-  transition: visibility .5s linear 0s,all .5s;
+  transition: visibility 2s linear 0s,all 2s;
   visibility: visible;
 }
 body>.adonToolSlave.slavehidden,
@@ -603,7 +619,7 @@ main>.adonToolSlave.slavehidden {
   overflow: hidden;
   padding: 0 0 0 0 !important;
   line-height: 0;
-  transition: visibility 0s linear .5s,all 0s;
+  transition: visibility 0s linear 2s,all 0s;
   transition-timing-function: ease;
   visibility: hidden;
 }
@@ -625,9 +641,9 @@ main>figure.adonToolBar {
 @media screen and (max-width:800px) {
   body>.adonHideOnScrollDown,
   main>.adonHideOnScrollDown {
-    transition: all .5s;
+    transition: all 2s;
     transition-timing-function: ease-in;
-    -webkit-transition: all .5s;
+    -webkit-transition: all 2s;
     -webkit-transition-timing-function: ease-in;
   }
   body>.adonHideOnScrollDown.adonHide,
@@ -666,14 +682,14 @@ main>dl {
   padding-bottom: 18px;
   padding-top: 18px;
 }
-body>dl dt,
-main>dl dt {
+body>dl>dt,
+main>dl>dt {
   color: #000;
   font: 800 1.56rem Montserrat;
   padding-top: 18px;
 }
-body>dl dd,
-main>dl dd {
+body>dl>dd,
+main>dl>dd {
   margin-left: 0;
   padding-bottom: 18px;
 }
@@ -687,48 +703,32 @@ body>table td,
 body>table th,
 main>table td,
 main>table th {
-  padding: 3px 18px;
+  padding: 18px;
 }
-body>table>tfoot td:nth-child(1),
-body>table>thead td:nth-child(1),
-main>table>tfoot td:nth-child(1),
-main>table>thead td:nth-child(1) {
-  min-width: 15%;
-}
-body>table>tfoot td,
-body>table>thead td,
-main>table>tfoot td,
-main>table>thead td {
-  min-width: 15%;
-  max-width: 70%;
-}
+body>table>tbody th,
 body>table>tfoot th,
 body>table>thead th,
+main>table>tbody th,
 main>table>tfoot th,
 main>table>thead th {
   color: #000;
   font-family: Montserrat;
   font-weight: 800;
-  border-bottom: 2px solid #000;
+}
+body>table>thead th,
+main>table>thead th {
+  border-bottom: 1px solid #737373;
+}
+body>table>tfoot th,
+main>table>tfoot th {
+  border-top: 1px solid #737373;
+  text-align: right;
 }
 body>table>tbody td,
 body>table>tbody th,
 main>table>tbody td,
 main>table>tbody th {
-  border-bottom: 1px solid #000;
-}
-body>table>tbody th,
-main>table>tbody th {
-  color: #000;
-  font-family: Montserrat;
-}
-body>table>tfoot td,
-main>table>tfoot td {
-  text-align: right;
-}
-body>table tr:nth-child(even),
-main>table tr:nth-child(even) {
-  background: #e9e9e9;
+  border-bottom: 1px solid #737373;
 }
 @media screen and (max-width:800px) {
   body>table,
@@ -739,11 +739,7 @@ main>table tr:nth-child(even) {
   }
 }
 body>form label,
-body>form legend,
-main>form label,
-main>form legend {
-  color: #000;
-  font-family: Montserrat;
+main>form label {
   margin-top: 18px;
 }
 body>form legend,
@@ -751,6 +747,13 @@ main>form legend {
   font-size: 1.56rem;
   margin-bottom: 2%;
   margin-top: 2%;
+}
+body>form label,
+body>form legend,
+main>form label,
+main>form legend {
+  color: #000;
+  font-family: Montserrat;
 }
 body>form textarea,
 main>form textarea {
@@ -760,7 +763,7 @@ body>form input[type=checkbox],
 body>form input[type=radio],
 main>form input[type=checkbox],
 main>form input[type=radio] {
-  margin-right: 3px;
+  margin-right: 18px;
 }
 body>form input[type=checkbox]+label,
 body>form input[type=radio]+label,
@@ -774,7 +777,7 @@ main>form input[type=radio]+label {
 }
 body>form fieldset,
 main>form fieldset {
-  border: 1px solid #737373;
+  border: 1px #737373 solid;
   margin-top: 18px;
   padding: 0 18px;
 }
@@ -812,13 +815,13 @@ main>form fieldset input[type=url],
 main>form fieldset select,
 main>form fieldset textarea {
   box-sizing: border-box;
-  padding: 3px;
+  padding: 18px;
   width: 100%;
 }
 body>form fieldset input:not([type]),
 main>form fieldset input:not([type]) {
   box-sizing: border-box;
-  padding: 3px;
+  padding: 18px;
   width: 100%;
 }
 body>form fieldset input[type=color],
@@ -882,6 +885,142 @@ main>pre {
     width: 96%!important;
   }
 }
+body>menu,
+main>menu {
+  box-sizing: border-box;
+  background-color: #000;
+  color: #737373;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  padding-left: 0;
+  top: 0;
+  z-index: 5000;
+  flex: initial;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+body>menu *,
+main>menu * {
+  box-sizing: border-box;
+}
+body>menu:after,
+main>menu:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+}
+body>menu a,
+main>menu a {
+  text-decoration: none;
+}
+body>menu label,
+main>menu label {
+  font-weight: 700;
+}
+body>menu a,
+body>menu label,
+main>menu a,
+main>menu label {
+  display: block;
+  cursor: pointer;
+  padding: 18px;
+  white-space: nowrap;
+  color: #737373;
+  flex-grow: 0;
+}
+body>menu menu,
+body>menu nav,
+main>menu menu,
+main>menu nav {
+  margin: 0;
+  padding: 0;
+}
+body>menu menu>nav menu nav,
+main>menu menu>nav menu nav {
+  padding-left: 18px;
+}
+body>menu menu>nav,
+main>menu menu>nav {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 2s ease,height 2s ease;
+}
+body>menu menu:hover>nav,
+main>menu menu:hover>nav {
+  opacity: 1;
+  height: auto;
+}
+body>menu>a,
+body>menu>menu,
+main>menu>a,
+main>menu>menu {
+  float: left;
+}
+body>menu>menu>nav,
+main>menu>menu>nav {
+  position: absolute;
+}
+body>nav,
+main>nav {
+  box-sizing: border-box;
+}
+body>nav *,
+main>nav * {
+  box-sizing: border-box;
+}
+body>nav:after,
+main>nav:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+}
+body>nav a,
+main>nav a {
+  text-decoration: none;
+  display: block;
+}
+body>nav label,
+main>nav label {
+  font-weight: 700;
+}
+body>nav a,
+body>nav label,
+main>nav a,
+main>nav label {
+  display: block;
+  cursor: pointer;
+  padding: 18px;
+  white-space: nowrap;
+}
+body>nav menu,
+body>nav nav,
+main>nav menu,
+main>nav nav {
+  margin: 0;
+  padding: 0;
+}
+body>nav menu>nav menu nav,
+main>nav menu>nav menu nav {
+  padding-left: 18px;
+}
+body>nav menu>nav,
+main>nav menu>nav {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+body>nav menu:hover>nav,
+main>nav menu:hover>nav {
+  opacity: 1;
+  height: auto;
+}
 body>figure,
 main>figure {
   box-sizing: border-box;
@@ -943,7 +1082,7 @@ main>details summary {
 }
 body>details>*,
 main>details>* {
-  padding: 3px 18px;
+  padding: 18px;
 }
 a>img {
   max-height: 50px;
@@ -953,19 +1092,24 @@ a>img {
 button,
 input[type=file] {
   background-color: #fff;
-  border: #000 1px solid;
   color: #000;
+  border: 1px solid #000;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-  font: 800 1.2rem Montserrat;
   padding: 18px 2%;
   text-decoration: none;
+  font: 800 1.2rem Montserrat;
+}
+button>img,
+input[type=file]>img {
+  max-height: 48px;
+  height: auto;
 }
 button:hover,
 input[type=file]:hover {
   background-color: #000;
-  border: #000 1px solid;
+  border: 1px #737373 solid;
   color: #fff;
 }
 button:disabled,
@@ -975,8 +1119,8 @@ input[type=file]:disabled {
 kbd {
   background-color: #000;
   color: #fff;
-  border-radius: 6px;
-  padding: 3px 18px;
+  border-radius: 36px;
+  padding: 18px;
 }
 body>address,
 main>address {
@@ -1070,55 +1214,43 @@ body>footer label,
 main>footer label {
   white-space: nowrap;
 }
-body>nav,
-main>nav {
-  background-color: #000;
-  color: #737373;
-  align-items: center;
-  display: flex;
-  font-size: 1rem;
-  font-weight: 400;
-  flex: initial;
-  justify-content: space-between;
-  position: sticky;
-  position: -webkit-sticky;
-  padding: 18px;
-  top: 0;
-  z-index: 5000;
-}
-body>nav a:first-child img,
-main>nav a:first-child img {
+body>menu a img,
+body>menu label img,
+main>menu a img,
+main>menu label img {
   height: 48px!important;
   max-height: 48px!important;
   min-height: 48px!important;
   width: auto;
 }
-body>nav>a,
-main>nav>a {
-  flex-grow: 0;
+body>menu a:hover,
+body>menu label:hover,
+main>menu a:hover,
+main>menu label:hover {
+  color: #fff;
+}
+body>menu a[active],
+body>menu label[active],
+main>menu a[active],
+main>menu label[active] {
+  color: #fff;
+}
+body>menu menu>nav a,
+body>menu menu>nav label,
+main>menu menu>nav a,
+main>menu menu>nav label {
+  background-color: #000;
   color: #737373;
-  display: block;
-  margin: 0 18px;
-  text-decoration: none;
-  white-space: nowrap!important;
-}
-body>nav>a:hover,
-main>nav>a:hover {
-  color: #fff;
-}
-body>nav>a[active],
-main>nav>a[active] {
-  color: #fff;
 }
 @media screen and (max-width:800px) {
-  body>nav,
-  main>nav {
+  body>menu,
+  main>menu {
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
   }
-  body>nav>a,
-  main>nav>a {
+  body>menu>a,
+  main>menu>a {
     flex-grow: 2;
     padding: 12px;
   }
