@@ -5,9 +5,11 @@ elio/elioangels/sinsay|master
 elio/elioangels/twig|master
 elio/eliothing/bones|master
 elio/eliothing/cells|master
+elio/eliothing/engage|master
 elio/eliothing/flesh|master
 elio/eliothing/generator-flesh|master
 elio/eliothing/icarus|master
+elio/eliothing/list|master
 elio/eliothing/schema|master
 elio/eliothing/spider|master
 elio/eliofaithful/genesis|master
@@ -22,6 +24,7 @@ elio/eliosin/generator-sin|master
 elio/eliosin/god|master
 elio/eliosin/innocence|master
 elio/eliosin/sins|master
+elio/eliosin/toothpaste|master
 elio/elioangels|master
 elio/eliosin|master
 elio/eliothing|master
