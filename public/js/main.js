@@ -1,3 +1,1 @@
-$(document).ready(function() {
-  $("nav").adonHideOnScrollDown();
-});
+$(document).ready(function(){$("nav").adonHideOnScrollDown()});

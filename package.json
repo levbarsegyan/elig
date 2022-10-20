@@ -1,51 +1,34 @@
 {
-    "name": "elio",
-    "title": "elio",
-    "version": "1",
-    "description": "Notes and resources for the elioWay project.",
-    "scripts": {
-        "format": "prettier --write \"**/*.{js,json,scss,md,html}\" \"!package.json\""
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://gitlab.com/elioway/elio/"
-    },
-    "keywords": [
-        "sass",
-        "css",
-        "scss",
-        "html",
-        "wireframe"
-    ],
-    "author": "Tim Bushell",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://gitlab.com/elioway/elio/issues?status=new&status=open"
-    },
-    "homepage": "https://gitlab.com/elioway/elio/blob/master/README.md",
-    "devDependencies": {
-        "@elioway/adon": "^1.5.0",
-        "@elioway/bushido": "^0.0.1",
-        "@elioway/eve": "^1.5.0",
-        "@elioway/god": "^1.5.0",
-        "@elioway/sassy-fibonacciness": "^1.2.5",
-        "browser-sync": "^2.24.4",
-        "chai": "^4.1.2",
-        "chai-dom": "^1.8.0",
-        "gulp": "^3.9.1",
-        "gulp-clean-css": "^3.9.4",
-        "gulp-concat": "^2.6.1",
-        "gulp-css-purge": "^3.0.9",
-        "gulp-rename": "^1.2.3",
-        "gulp-sass": "^4.0.1",
-        "gulp-uglify": "^3.0.0",
-        "jquery": "^3.3.1",
-        "jsdom": "11.12.0",
-        "jsdom-global": "3.0.2",
-        "mocha": "^6.2.0",
-        "prettier": "1.16.4",
-        "run-sequence": "^2.2.1",
-        "sass-true": "^4.0.0",
-        "sassy-lists": "^3.0.1"
-    }
+  "author": "Tim Bushell",
+  "description": "Notes and resources for the elioWay project.",
+  "name": "elio",
+  "title": "elio",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@elioway/adon": "^1.5.14",
+    "@elioway/bushido": "0.0.15",
+    "@elioway/sins": "0.0.15",
+    "browser-sync": "^2.24.4",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "prettier": "1.16.4"
+  },
+  "homepage": "https://gitlab.com/elioway/elio/blob/master/README.md",
+  "keywords": [
+    "sass",
+    "css",
+    "scss",
+    "html",
+    "wireframe"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/elioway/elio/"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,json,scss,md,html}\" \"!package.json\""
+  }
 }

@@ -9,9 +9,9 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install yarn -y
 yarn global add npm
-export PATH="$(yarn global bin):$PATH"
+# export PATH="$(yarn global bin):$PATH"
 # OR... fish people
-set -U fish_user_paths /home/tim/.yarn/bin $fish_user_paths
+# set -U fish_user_paths /home/tim/.yarn/bin $fish_user_paths
 ```
 - node and npm are installed.
   - If not using yarn, We recommended using [nvm](https://github.com/creationix/nvm) to install both.
