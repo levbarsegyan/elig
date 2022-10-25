@@ -5,9 +5,10 @@
   "title": "elio",
   "version": "0.0.1",
   "devDependencies": {
-    "@elioway/adon": "^1.5.14",
     "@elioway/bushido": "^0.0.16",
-    "@elioway/sins": "^0.0.16",
+    "@elioway/sins": "^0.0.16"
+  },
+  "devDependencies": {
     "browser-sync": "^2.24.4",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
