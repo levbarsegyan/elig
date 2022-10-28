@@ -4,7 +4,7 @@
   "name": "elio",
   "title": "elio",
   "version": "0.0.1",
-  "devDependencies": {
+  "dependencies": {
     "@elioway/bushido": "^0.0.16",
     "@elioway/sins": "^0.0.16"
   },
